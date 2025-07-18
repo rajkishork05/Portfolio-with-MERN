@@ -1,0 +1,17 @@
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: var(--text);
+  font-size: 1rem;
+  z-index: 100;
+  text-align: center;
+  background: var(--bg-sec);
+  font-size: 1rem;
+}
+
+
