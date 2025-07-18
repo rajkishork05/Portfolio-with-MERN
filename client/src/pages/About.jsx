@@ -26,15 +26,12 @@ const skillData = [
     items: [
       { name: 'Node.js', icon: <SiNodedotjs /> },
       { name: 'Express.js', icon: <SiExpress /> },
-      { name: 'Django', icon: <SiDjango /> }
     ]
   },
   {
     label: 'Databases',
     items: [
       { name: 'MongoDB', icon: <SiMongodb /> },
-      { name: 'SQLite', icon: <SiSqlite /> },
-      { name: 'MySQL', icon: <SiMysql /> }
     ]
   },
   {
