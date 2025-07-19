@@ -18,9 +18,9 @@ app.use(express.static(path.join(__dirname, "./client/dist")))
 //route
 app.use("/api/v1/portfolio", require("./routes/contact_route"))
 
-app.get("*", function(req,res){
-    res.sendFile(path.join(__dirname, "./client/dist/index.html"))
-})
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/dist", "index.html"));
+});
 //port
 // const port = 8080;
 const PORT = process.env.PORT || 8080
