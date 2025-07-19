@@ -18,7 +18,7 @@ const Contact = () => {
         toast.error("Please fill all fields")
         return
       }
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {name, email, msg})
+      const res = await axios.post("/api/contact/sendEmail", {name, email, msg})
       if(res.data.success){
         toast.success(res.data.message)
         setName('')

@@ -16,10 +16,10 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, "./client/dist")))
 
 //route
-app.use("/api/v1/portfolio", require("./routes/contact_route"))
+app.use("/api/contact", require("./routes/contact_route"))
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/dist", "index.html"));
+    res.sendFile(path.join(__dirname, "client/dist/index.html"));
 });
 //port
 // const port = 8080;
