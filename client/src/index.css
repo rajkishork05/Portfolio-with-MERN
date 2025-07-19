@@ -29,3 +29,20 @@
   --z-header: 1000;
   --z-modal: 1050;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main layout wrapper */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content should grow and push footer down */
+.main-content {
+  flex: 1;
+}

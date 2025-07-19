@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/about.css'
 import { SiJavascript, SiPython, SiC, SiHtml5, SiCss3, SiReact, SiTailwindcss, SiBootstrap, SiNodedotjs, SiExpress, SiDjango, SiMongodb, SiSqlite, SiMysql, SiGit, SiGithub } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 
 const skillData = [
   {
@@ -53,7 +54,7 @@ const About = () => {
       <section id="about" className="about">
         <h2>About Me</h2>
         <p>
-          I’m Raj Kishor, a self-motivated and versatile <strong>full-stack MERN developer</strong> from Rudraprayag, Uttarakhand, currently pursuing a B.Tech in Computer Science Engineering. With a passion for building impactful web applications, I specialize in <strong>JavaScript, Python, and modern frameworks</strong> like React and Node.js. My development journey spans across projects involving secure image encryption, quiz platforms, and guide booking systems, each reflecting my drive for both innovation and problem-solving.
+          I’m Raj Kishor, a self-motivated and versatile <strong>full-stack MERN developer</strong> from Rudraprayag, Uttarakhand. I have pursued B.Tech in Computer Science Engineering. With a passion for building impactful web applications, I specialize in <strong>JavaScript, Python, and modern frameworks</strong> like React and Node.js. My development journey spans across projects involving secure image encryption, quiz platforms, and guide booking systems, each reflecting my drive for both innovation and problem-solving.
         </p>
         <p>
           My experience includes working internationally as a <strong>Computational Thinking Intern at Marge’ah Ltd, New Zealand</strong>, where I led prototype development and contributed to workflow automation. I've also actively contributed to multiple hackathons, technical fests, and code challenges like bug hunting and blind coding — often serving as a technical coordinator in college-level events.
@@ -85,7 +86,12 @@ const About = () => {
             </div>
           ))}
         </div>
+        <div className='project-btn'>
+        <Link to="/project" >Projects</Link>
+      </div>
       </section>
+      
+      
     </div>
   )
 }

@@ -1,0 +1,128 @@
+.contact-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.contact-container h2 {
+  font-size: 2.2rem;
+  color: #1a73e8;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-desc {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 56%;
+  transform: translateY(-50%);
+  color: #1a73e8;
+  z-index: 1;
+}
+.input-msg{
+    position: absolute;
+    left: 14px;
+    top: 10%;
+    color: #1a73e8;
+    z-index: 1;
+    
+}
+.icon {
+  font-size: 1.4rem;;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #1a73e8 60%, #4285f4 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #4285f4 60%, #1a73e8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
+}
+
+.send-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #1a73e8;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4285f4;
+  transform: translateY(-3px);
+}
+
