@@ -82,5 +82,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
 }
