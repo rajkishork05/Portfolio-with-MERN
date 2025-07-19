@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "./client/dist")))
 //route
 app.use("/api/contact", require("./routes/contact_route"))
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "client/dist/index.html"));
 });
 //port
